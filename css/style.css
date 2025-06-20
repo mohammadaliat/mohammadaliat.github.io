@@ -323,16 +323,26 @@ h3.position {
     color: #777;
 }
 a.abt-btn {
-    background: #2a5298;
-    border: 2px solid #2a5298;
-    text-transform: capitalize;
-    color: #fff;
-    padding: 10px 25px;
-    display: inline-block;
-    margin-top: 2em;
-    letter-spacing: 1px;
-    font-size: 15px;
-    font-weight: 600;
+  background: #ffffff;
+  border: 2px solid #2a2529;
+  color: #2a2529;
+  padding: 10px 25px;
+  display: inline-block;
+  margin-top: 2em;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+a.abt-btn:hover {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  border-color: transparent;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(37, 117, 252, 0.4);
+  transition: all 0.4s ease-in-out;
 }
 .about-right-inner h4 {
     font-size: 24px;
