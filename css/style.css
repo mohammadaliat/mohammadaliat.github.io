@@ -211,87 +211,145 @@ a.scroll.bnr-btn i{
 /* banner */
 
 .banner-w3pvt {
-	background: url(../images/ali.jpg) no-repeat center;
-	background-size: cover;
-	position: relative;
+  background: url(../images/ali.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-w3pvt:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  opacity: 0.9;
+  background: #1e3c72;
+  background: -webkit-linear-gradient(to right, #2a5298, rgba(30, 60, 114, 0.59));
+  background: linear-gradient(to right, #2a5298, rgba(30, 60, 114, 0.59));
 }
 
 .bnr-txt-w3pvt {
-    margin: 12em 0 9em;
-}
-.banner-w3pvt:before {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.5);
-	background-size: cover;
-	opacity: 0.9;
-	background: #1e3c72;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #2a5298, rgba(30, 60, 114, 0.59));  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #2a5298, rgba(30, 60, 114, 0.59)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-.bnr-w3pvt-txt h2 {
-    font-size: 60px;
-    font-weight: 600;
-    color: #fff;
-	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
-}
-.bnr-w3pvt-txt p {
-    color: #eee;
+  margin: 12em 0 9em;
 }
 
 .bnr-w3pvt-txt h6 {
-    font-size: 17px;
-    color: #fff;
-    margin-bottom: 30px;
-    position: relative;
-    text-transform: capitalize;
+  font-size: 17px;
+  color: #fff;
+  margin-bottom: 30px;
+  position: relative;
+  text-transform: capitalize;
 }
 
 .bnr-w3pvt-txt h6:after {
-    position: absolute;
-    content: '';
-    width: 8%;
-	height: 1px;
-    background: #fff;
-    left: 0;
-	bottom: -70%
+  content: '';
+  position: absolute;
+  width: 8%;
+  height: 1px;
+  background: #fff;
+  left: 0;
+  bottom: -70%;
 }
-.bnr-w3pvt-txt h2 span{
-    background: ur 
+
+.bnr-w3pvt-txt h2 {
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
 }
+
+.bnr-w3pvt-txt h2 span {
+  color: #fff;
+}
+
 .bnr-w3pvt-txt h4 {
-    text-transform: capitalize;
-    color: #eee;
-    letter-spacing: 1px;
-    font-size: 26px;
+  text-transform: capitalize;
+  color: #eee;
+  letter-spacing: 1px;
+  font-size: 26px;
 }
+
+.bnr-w3pvt-txt p {
+  color: #eee;
+}
+
+/* Social icons */
 ul.social_section_1info li {
-    display: inline-block;
+  display: inline-block;
 }
+
 ul.social_section_1info a {
-    margin-right: 4px;
-    width: 40px;
-    height: 40px;
-    display: block;
-    background: #3b5fa1;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+  margin-right: 6px;
+  width: 42px;
+  height: 42px;
+  display: inline-block;
+  background: #3b5fa1;
+  text-align: center;
+  line-height: 42px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  transform: scale(1);
 }
+
+ul.social_section_1info a:hover {
+  transform: scale(1.15) rotate(5deg);
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
 ul.social_section_1info a span.fa {
-    color: #fff;
-    font-size: 13.5px;
-    line-height: 40px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 42px;
 }
+
+/* Banner buttons */
+.bnr-btn {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  display: inline-block;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.bnr-btn:hover {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  border-color: transparent;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(37, 117, 252, 0.4);
+}
+
+.bnr-btn1 {
+  background: #fff;
+  color: #2a2529;
+  border: 2px solid #2a2529;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  display: inline-block;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.bnr-btn1:hover {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  border-color: transparent;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(106, 17, 203, 0.4);
+}
+
 /* //banner */
 
 /*-- about --*/
@@ -299,6 +357,51 @@ ul.social_section_1info a span.fa {
 .about{
 	position: relative;
 }
+.glitch {
+  position: relative;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #000;
+  text-align: left;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.glitch::before {
+  color: #ff00c8; /* HOT pink – edit as you wish */
+  z-index: 1;
+  animation: glitchTop 1s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+  color: #00ffff; /* Neon cyan – edit as you wish */
+  z-index: 2;
+  animation: glitchBottom 1s infinite linear alternate-reverse;
+}
+
+@keyframes glitchTop {
+  0%   { clip-path: inset(0 0 90% 0); transform: translateX(-1px); }
+  100% { clip-path: inset(0 0 10% 0); transform: translateX(1px); }
+}
+
+@keyframes glitchBottom {
+  0%   { clip-path: inset(90% 0 0 0); transform: translateX(1px); }
+  100% { clip-path: inset(10% 0 0 0); transform: translateX(-1px); }
+}
+
 h3.position {
     position: absolute;
     font-size: 60px;
@@ -322,7 +425,7 @@ h3.position {
     font-size: 16px;
     color: #777;
 }
-a.abt-btn {
+.about a.abt-btn {
   background: #ffffff;
   border: 2px solid #2a2529;
   color: #2a2529;
@@ -336,7 +439,8 @@ a.abt-btn {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
 }
-a.abt-btn:hover {
+
+.about a.abt-btn:hover {
   background: linear-gradient(to right, #6a11cb, #2575fc);
   color: #fff;
   border-color: transparent;
