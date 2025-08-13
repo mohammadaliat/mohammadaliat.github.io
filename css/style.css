@@ -723,19 +723,28 @@ p.paragraph:after {
     height: 8em;
 }
 .contact-form button.btn.btn-default {
-    background: #2a5298;
-    border: 2px solid #2a5298;
-    text-transform: capitalize;
-    color: #fff;
+    background: #ffffff;
+    border: 2px solid #2a2529;
+    color: #2a2529;
     padding: 10px 25px;
     display: inline-block;
-    letter-spacing: 1px;
+    margin-top: 0.8em;
+    letter-spacing: 0.9px;
     font-size: 15px;
     font-weight: 600;
-    border-radius: 0rem;
-    margin-left: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    left: 14px; 
 }
-
+.contact-form button.btn.btn-default:hover {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    border-color: transparent;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(37, 117, 252, 0.4);
+}
 .w3layouts-map iframe {
     width: 100%;
     min-height: 420px;
